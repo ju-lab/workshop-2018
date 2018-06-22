@@ -1,0 +1,2985 @@
+STAR version=STAR_2.5.4b
+STAR compilation time,server,dir=Fri Feb 9 10:47:42 EST 2018 florence.cshl.edu:/sonas-hs/gingeras/nlsas_norepl/user/dobin/STAR/STAR.sandbox/source
+##### DEFAULT parameters:
+versionSTAR                       20201
+versionGenome                     20101   20200   
+parametersFiles                   -   
+sysShell                          -
+runMode                           alignReads
+runThreadN                        1
+runDirPerm                        User_RWX
+runRNGseed                        777
+genomeDir                         ./GenomeDir/
+genomeLoad                        NoSharedMemory
+genomeFastaFiles                  -   
+genomeChainFiles                  -   
+genomeSAindexNbases               14
+genomeChrBinNbits                 18
+genomeSAsparseD                   1
+genomeSuffixLengthMax             18446744073709551615
+genomeFileSizes                   0   
+genomeConsensusFile               -
+readFilesType                     Fastx   
+readFilesIn                       Read1   Read2   
+readFilesPrefix                   -
+readFilesCommand                  -   
+readMatesLengthsIn                NotEqual
+readMapNumber                     18446744073709551615
+readNameSeparator                 /   
+inputBAMfile                      -
+bamRemoveDuplicatesType           -
+bamRemoveDuplicatesMate2basesN    0
+limitGenomeGenerateRAM            31000000000
+limitIObufferSize                 150000000
+limitOutSAMoneReadBytes           100000
+limitOutSJcollapsed               1000000
+limitOutSJoneRead                 1000
+limitBAMsortRAM                   0
+limitSjdbInsertNsj                1000000
+outTmpDir                         -
+outTmpKeep                        None
+outStd                            Log
+outReadsUnmapped                  None
+outQSconversionAdd                0
+outMultimapperOrder               Old_2.4
+outSAMtype                        SAM   
+outSAMmode                        Full
+outSAMstrandField                 None
+outSAMattributes                  Standard   
+outSAMunmapped                    None   
+outSAMorder                       Paired
+outSAMprimaryFlag                 OneBestScore
+outSAMreadID                      Standard
+outSAMmapqUnique                  255
+outSAMflagOR                      0
+outSAMflagAND                     65535
+outSAMattrRGline                  -   
+outSAMheaderHD                    -   
+outSAMheaderPG                    -   
+outSAMheaderCommentFile           -
+outBAMcompression                 1
+outBAMsortingThreadN              0
+outSAMfilter                      None   
+outSAMmultNmax                    18446744073709551615
+outSAMattrIHstart                 1
+outSJfilterReads                  All
+outSJfilterCountUniqueMin         3   1   1   1   
+outSJfilterCountTotalMin          3   1   1   1   
+outSJfilterOverhangMin            30   12   12   12   
+outSJfilterDistToOtherSJmin       10   0   5   10   
+outSJfilterIntronMaxVsReadN       50000   100000   200000   
+outWigType                        None   
+outWigStrand                      Stranded   
+outWigReferencesPrefix            -
+outWigNorm                        RPM   
+outFilterType                     Normal
+outFilterMultimapNmax             10
+outFilterMultimapScoreRange       1
+outFilterScoreMin                 0
+outFilterScoreMinOverLread        0.66
+outFilterMatchNmin                0
+outFilterMatchNminOverLread       0.66
+outFilterMismatchNmax             10
+outFilterMismatchNoverLmax        0.3
+outFilterMismatchNoverReadLmax    1
+outFilterIntronMotifs             None
+outFilterIntronStrands            RemoveInconsistentStrands
+clip5pNbases                      0   
+clip3pNbases                      0   
+clip3pAfterAdapterNbases          0   
+clip3pAdapterSeq                  -   
+clip3pAdapterMMp                  0.1   
+winBinNbits                       16
+winAnchorDistNbins                9
+winFlankNbins                     4
+winAnchorMultimapNmax             50
+winReadCoverageRelativeMin        0.5
+winReadCoverageBasesMin           0
+scoreGap                          0
+scoreGapNoncan                    -8
+scoreGapGCAG                      -4
+scoreGapATAC                      -8
+scoreStitchSJshift                1
+scoreGenomicLengthLog2scale       -0.25
+scoreDelBase                      -2
+scoreDelOpen                      -2
+scoreInsOpen                      -2
+scoreInsBase                      -2
+seedSearchLmax                    0
+seedSearchStartLmax               50
+seedSearchStartLmaxOverLread      1
+seedPerReadNmax                   1000
+seedPerWindowNmax                 50
+seedNoneLociPerWindow             10
+seedMultimapNmax                  10000
+seedSplitMin                      12
+alignIntronMin                    21
+alignIntronMax                    0
+alignMatesGapMax                  0
+alignTranscriptsPerReadNmax       10000
+alignSJoverhangMin                5
+alignSJDBoverhangMin              3
+alignSJstitchMismatchNmax         0   -1   0   0   
+alignSplicedMateMapLmin           0
+alignSplicedMateMapLminOverLmate    0.66
+alignWindowsPerReadNmax           10000
+alignTranscriptsPerWindowNmax     100
+alignEndsType                     Local
+alignSoftClipAtReferenceEnds      Yes
+alignEndsProtrude                 0   ConcordantPair   
+chimSegmentMin                    0
+chimScoreMin                      0
+chimScoreDropMax                  20
+chimScoreSeparation               10
+chimScoreJunctionNonGTAG          -1
+chimMainSegmentMultNmax           10
+chimJunctionOverhangMin           20
+chimOutType                       SeparateSAMold   
+chimFilter                        banGenomicN   
+chimSegmentReadGapMax             0
+sjdbFileChrStartEnd               -   
+sjdbGTFfile                       -
+sjdbGTFchrPrefix                  -
+sjdbGTFfeatureExon                exon
+sjdbGTFtagExonParentTranscript    transcript_id
+sjdbGTFtagExonParentGene          gene_id
+sjdbOverhang                      100
+sjdbScore                         2
+sjdbInsertSave                    Basic
+quantMode                         -   
+quantTranscriptomeBAMcompression    1
+quantTranscriptomeBan             IndelSoftclipSingleend
+twopass1readsN                    18446744073709551615
+twopassMode                       None
+##### Command Line:
+/home/users/kjyi/tools/STAR/STAR-2.5.4b/bin/Linux_x86_64/STAR --runMode alignReads --runThreadN 4 --genomeDir /home/users/kjyi/ref/hg19/star_index --readFilesIn fastq/mod/fastq.GSM2411332.fastq.gz --readFilesCommand zcat --outFileNamePrefix ./star/NSCLC_01_NTIL. --sjdbGTFfile /home/users/kjyi/ref/gencode.v27lift37.gtf --twopassMode Basic --outFilterMultimapNmax 20 --alignSJoverhangMin 8 --alignSJDBoverhangMin 1 --outFilterMismatchNmax 999 --outFilterMismatchNoverLmax 0.1 --alignIntronMin 20 --alignIntronMax 1000000 --alignMatesGapMax 1000000 --outFilterType BySJout --outFilterScoreMinOverLread 0.33 --outFilterMatchNminOverLread 0.33 --limitSjdbInsertNsj 1200000 --outSAMstrandField intronMotif --outFilterIntronMotifs None --alignSoftClipAtReferenceEnds Yes --quantMode TranscriptomeSAM GeneCounts --outSAMtype BAM Unsorted --outSAMunmapped Within --outSAMattributes NH HI AS nM NM ch --outSAMattrRGline ID:NSCLC_01_NTIL SM:NSCLC_01_NTIL PL:ILLUMINA --genomeLoad NoSharedMemory --chimSegmentMin 15 --chimJunctionOverhangMin 15 --chimOutType WithinBAM SoftClip --chimMainSegmentMultNmax 1
+##### Initial USER parameters from Command Line:
+outFileNamePrefix                 ./star/NSCLC_01_NTIL.
+###### All USER parameters from Command Line:
+runMode                       alignReads     ~RE-DEFINED
+runThreadN                    4     ~RE-DEFINED
+genomeDir                     /home/users/kjyi/ref/hg19/star_index     ~RE-DEFINED
+readFilesIn                   fastq/mod/fastq.GSM2411332.fastq.gz        ~RE-DEFINED
+readFilesCommand              zcat        ~RE-DEFINED
+outFileNamePrefix             ./star/NSCLC_01_NTIL.     ~RE-DEFINED
+sjdbGTFfile                   /home/users/kjyi/ref/gencode.v27lift37.gtf     ~RE-DEFINED
+twopassMode                   Basic     ~RE-DEFINED
+outFilterMultimapNmax         20     ~RE-DEFINED
+alignSJoverhangMin            8     ~RE-DEFINED
+alignSJDBoverhangMin          1     ~RE-DEFINED
+outFilterMismatchNmax         999     ~RE-DEFINED
+outFilterMismatchNoverLmax    0.1     ~RE-DEFINED
+alignIntronMin                20     ~RE-DEFINED
+alignIntronMax                1000000     ~RE-DEFINED
+alignMatesGapMax              1000000     ~RE-DEFINED
+outFilterType                 BySJout     ~RE-DEFINED
+outFilterScoreMinOverLread    0.33     ~RE-DEFINED
+outFilterMatchNminOverLread   0.33     ~RE-DEFINED
+limitSjdbInsertNsj            1200000     ~RE-DEFINED
+outSAMstrandField             intronMotif     ~RE-DEFINED
+outFilterIntronMotifs         None     ~RE-DEFINED
+alignSoftClipAtReferenceEnds  Yes     ~RE-DEFINED
+quantMode                     TranscriptomeSAM   GeneCounts        ~RE-DEFINED
+outSAMtype                    BAM   Unsorted        ~RE-DEFINED
+outSAMunmapped                Within        ~RE-DEFINED
+outSAMattributes              NH   HI   AS   nM   NM   ch        ~RE-DEFINED
+outSAMattrRGline              ID:NSCLC_01_NTIL   SM:NSCLC_01_NTIL   PL:ILLUMINA        ~RE-DEFINED
+genomeLoad                    NoSharedMemory     ~RE-DEFINED
+chimSegmentMin                15     ~RE-DEFINED
+chimJunctionOverhangMin       15     ~RE-DEFINED
+chimOutType                   WithinBAM   SoftClip        ~RE-DEFINED
+chimMainSegmentMultNmax       1     ~RE-DEFINED
+##### Finished reading parameters from all sources
+
+##### Final user re-defined parameters-----------------:
+runMode                           alignReads
+runThreadN                        4
+genomeDir                         /home/users/kjyi/ref/hg19/star_index
+genomeLoad                        NoSharedMemory
+readFilesIn                       fastq/mod/fastq.GSM2411332.fastq.gz   
+readFilesCommand                  zcat   
+limitSjdbInsertNsj                1200000
+outFileNamePrefix                 ./star/NSCLC_01_NTIL.
+outSAMtype                        BAM   Unsorted   
+outSAMstrandField                 intronMotif
+outSAMattributes                  NH   HI   AS   nM   NM   ch   
+outSAMunmapped                    Within   
+outSAMattrRGline                  ID:NSCLC_01_NTIL   SM:NSCLC_01_NTIL   PL:ILLUMINA   
+outFilterType                     BySJout
+outFilterMultimapNmax             20
+outFilterScoreMinOverLread        0.33
+outFilterMatchNminOverLread       0.33
+outFilterMismatchNmax             999
+outFilterMismatchNoverLmax        0.1
+outFilterIntronMotifs             None
+alignIntronMin                    20
+alignIntronMax                    1000000
+alignMatesGapMax                  1000000
+alignSJoverhangMin                8
+alignSJDBoverhangMin              1
+alignSoftClipAtReferenceEnds      Yes
+chimSegmentMin                    15
+chimMainSegmentMultNmax           1
+chimJunctionOverhangMin           15
+chimOutType                       WithinBAM   SoftClip   
+sjdbGTFfile                       /home/users/kjyi/ref/gencode.v27lift37.gtf
+quantMode                         TranscriptomeSAM   GeneCounts   
+twopassMode                       Basic
+
+-------------------------------
+##### Final effective command line:
+/home/users/kjyi/tools/STAR/STAR-2.5.4b/bin/Linux_x86_64/STAR   --runMode alignReads   --runThreadN 4   --genomeDir /home/users/kjyi/ref/hg19/star_index   --genomeLoad NoSharedMemory   --readFilesIn fastq/mod/fastq.GSM2411332.fastq.gz      --readFilesCommand zcat      --limitSjdbInsertNsj 1200000   --outFileNamePrefix ./star/NSCLC_01_NTIL.   --outSAMtype BAM   Unsorted      --outSAMstrandField intronMotif   --outSAMattributes NH   HI   AS   nM   NM   ch      --outSAMunmapped Within      --outSAMattrRGline ID:NSCLC_01_NTIL   SM:NSCLC_01_NTIL   PL:ILLUMINA      --outFilterType BySJout   --outFilterMultimapNmax 20   --outFilterScoreMinOverLread 0.33   --outFilterMatchNminOverLread 0.33   --outFilterMismatchNmax 999   --outFilterMismatchNoverLmax 0.1   --outFilterIntronMotifs None   --alignIntronMin 20   --alignIntronMax 1000000   --alignMatesGapMax 1000000   --alignSJoverhangMin 8   --alignSJDBoverhangMin 1   --alignSoftClipAtReferenceEnds Yes   --chimSegmentMin 15   --chimMainSegmentMultNmax 1   --chimJunctionOverhangMin 15   --chimOutType WithinBAM   SoftClip      --sjdbGTFfile /home/users/kjyi/ref/gencode.v27lift37.gtf   --quantMode TranscriptomeSAM   GeneCounts      --twopassMode Basic
+
+##### Final parameters after user input--------------------------------:
+versionSTAR                       20201
+versionGenome                     20101   20200   
+parametersFiles                   -   
+sysShell                          -
+runMode                           alignReads
+runThreadN                        4
+runDirPerm                        User_RWX
+runRNGseed                        777
+genomeDir                         /home/users/kjyi/ref/hg19/star_index
+genomeLoad                        NoSharedMemory
+genomeFastaFiles                  -   
+genomeChainFiles                  -   
+genomeSAindexNbases               14
+genomeChrBinNbits                 18
+genomeSAsparseD                   1
+genomeSuffixLengthMax             18446744073709551615
+genomeFileSizes                   0   
+genomeConsensusFile               -
+readFilesType                     Fastx   
+readFilesIn                       fastq/mod/fastq.GSM2411332.fastq.gz   
+readFilesPrefix                   -
+readFilesCommand                  zcat   
+readMatesLengthsIn                NotEqual
+readMapNumber                     18446744073709551615
+readNameSeparator                 /   
+inputBAMfile                      -
+bamRemoveDuplicatesType           -
+bamRemoveDuplicatesMate2basesN    0
+limitGenomeGenerateRAM            31000000000
+limitIObufferSize                 150000000
+limitOutSAMoneReadBytes           100000
+limitOutSJcollapsed               1000000
+limitOutSJoneRead                 1000
+limitBAMsortRAM                   0
+limitSjdbInsertNsj                1200000
+outFileNamePrefix                 ./star/NSCLC_01_NTIL.
+outTmpDir                         -
+outTmpKeep                        None
+outStd                            Log
+outReadsUnmapped                  None
+outQSconversionAdd                0
+outMultimapperOrder               Old_2.4
+outSAMtype                        BAM   Unsorted   
+outSAMmode                        Full
+outSAMstrandField                 intronMotif
+outSAMattributes                  NH   HI   AS   nM   NM   ch   
+outSAMunmapped                    Within   
+outSAMorder                       Paired
+outSAMprimaryFlag                 OneBestScore
+outSAMreadID                      Standard
+outSAMmapqUnique                  255
+outSAMflagOR                      0
+outSAMflagAND                     65535
+outSAMattrRGline                  ID:NSCLC_01_NTIL   SM:NSCLC_01_NTIL   PL:ILLUMINA   
+outSAMheaderHD                    -   
+outSAMheaderPG                    -   
+outSAMheaderCommentFile           -
+outBAMcompression                 1
+outBAMsortingThreadN              0
+outSAMfilter                      None   
+outSAMmultNmax                    18446744073709551615
+outSAMattrIHstart                 1
+outSJfilterReads                  All
+outSJfilterCountUniqueMin         3   1   1   1   
+outSJfilterCountTotalMin          3   1   1   1   
+outSJfilterOverhangMin            30   12   12   12   
+outSJfilterDistToOtherSJmin       10   0   5   10   
+outSJfilterIntronMaxVsReadN       50000   100000   200000   
+outWigType                        None   
+outWigStrand                      Stranded   
+outWigReferencesPrefix            -
+outWigNorm                        RPM   
+outFilterType                     BySJout
+outFilterMultimapNmax             20
+outFilterMultimapScoreRange       1
+outFilterScoreMin                 0
+outFilterScoreMinOverLread        0.33
+outFilterMatchNmin                0
+outFilterMatchNminOverLread       0.33
+outFilterMismatchNmax             999
+outFilterMismatchNoverLmax        0.1
+outFilterMismatchNoverReadLmax    1
+outFilterIntronMotifs             None
+outFilterIntronStrands            RemoveInconsistentStrands
+clip5pNbases                      0   
+clip3pNbases                      0   
+clip3pAfterAdapterNbases          0   
+clip3pAdapterSeq                  -   
+clip3pAdapterMMp                  0.1   
+winBinNbits                       16
+winAnchorDistNbins                9
+winFlankNbins                     4
+winAnchorMultimapNmax             50
+winReadCoverageRelativeMin        0.5
+winReadCoverageBasesMin           0
+scoreGap                          0
+scoreGapNoncan                    -8
+scoreGapGCAG                      -4
+scoreGapATAC                      -8
+scoreStitchSJshift                1
+scoreGenomicLengthLog2scale       -0.25
+scoreDelBase                      -2
+scoreDelOpen                      -2
+scoreInsOpen                      -2
+scoreInsBase                      -2
+seedSearchLmax                    0
+seedSearchStartLmax               50
+seedSearchStartLmaxOverLread      1
+seedPerReadNmax                   1000
+seedPerWindowNmax                 50
+seedNoneLociPerWindow             10
+seedMultimapNmax                  10000
+seedSplitMin                      12
+alignIntronMin                    20
+alignIntronMax                    1000000
+alignMatesGapMax                  1000000
+alignTranscriptsPerReadNmax       10000
+alignSJoverhangMin                8
+alignSJDBoverhangMin              1
+alignSJstitchMismatchNmax         0   -1   0   0   
+alignSplicedMateMapLmin           0
+alignSplicedMateMapLminOverLmate    0.66
+alignWindowsPerReadNmax           10000
+alignTranscriptsPerWindowNmax     100
+alignEndsType                     Local
+alignSoftClipAtReferenceEnds      Yes
+alignEndsProtrude                 0   ConcordantPair   
+chimSegmentMin                    15
+chimScoreMin                      0
+chimScoreDropMax                  20
+chimScoreSeparation               10
+chimScoreJunctionNonGTAG          -1
+chimMainSegmentMultNmax           1
+chimJunctionOverhangMin           15
+chimOutType                       WithinBAM   SoftClip   
+chimFilter                        banGenomicN   
+chimSegmentReadGapMax             0
+sjdbFileChrStartEnd               -   
+sjdbGTFfile                       /home/users/kjyi/ref/gencode.v27lift37.gtf
+sjdbGTFchrPrefix                  -
+sjdbGTFfeatureExon                exon
+sjdbGTFtagExonParentTranscript    transcript_id
+sjdbGTFtagExonParentGene          gene_id
+sjdbOverhang                      100
+sjdbScore                         2
+sjdbInsertSave                    Basic
+quantMode                         TranscriptomeSAM   GeneCounts   
+quantTranscriptomeBAMcompression    1
+quantTranscriptomeBan             IndelSoftclipSingleend
+twopass1readsN                    18446744073709551615
+twopassMode                       Basic
+----------------------------------------
+
+
+   Input read files for mate 1, from input string fastq/mod/fastq.GSM2411332.fastq.gz
+-rw-r--r-- 1 kjyi julab 262505562 Jun 18 12:19 fastq/mod/fastq.GSM2411332.fastq.gz
+
+   readsCommandsFile:
+exec > "./star/NSCLC_01_NTIL._STARtmp/tmp.fifo.read1"
+echo FILE 0
+zcat      "fastq/mod/fastq.GSM2411332.fastq.gz"
+
+WARNING --outSAMattrRG defines a read group, therefore STAR will output RG attribute
+WARNING --outSAMstrandField=intronMotif, therefore STAR will output XS attribute
+Finished loading and checking parameters
+Reading genome generation parameters:
+versionGenome                 20201        ~RE-DEFINED
+genomeFastaFiles              hg19.fa        ~RE-DEFINED
+genomeSAindexNbases           14     ~RE-DEFINED
+genomeChrBinNbits             18     ~RE-DEFINED
+genomeSAsparseD               1     ~RE-DEFINED
+sjdbOverhang                  100     ~RE-DEFINED
+sjdbFileChrStartEnd           -        ~RE-DEFINED
+sjdbGTFfile                   gencode.v27lift37.annotation.patched_contigs.gtf     ~RE-DEFINED
+sjdbGTFchrPrefix              -     ~RE-DEFINED
+sjdbGTFfeatureExon            exon     ~RE-DEFINED
+sjdbGTFtagExonParentTranscripttranscript_id     ~RE-DEFINED
+sjdbGTFtagExonParentGene      gene_id     ~RE-DEFINED
+sjdbInsertSave                Basic     ~RE-DEFINED
+genomeFileSizes               3186586660   24219091152        ~RE-DEFINED
+Genome version is compatible with current STAR version
+Number of real (reference) chromosomes= 84
+1	1	249250621	0
+2	2	243199373	249298944
+3	3	198022430	492568576
+4	4	191154276	690749440
+5	5	180915260	882114560
+6	6	171115067	1063256064
+7	7	159138663	1234436096
+8	8	146364022	1393819648
+9	9	141213431	1540358144
+10	10	135534747	1681653760
+11	11	135006516	1817444352
+12	12	133851895	1952710656
+13	13	115169878	2086666240
+14	14	107349540	2202009600
+15	15	102531392	2309488640
+16	16	90354753	2412249088
+17	17	81195210	2502688768
+18	18	78077248	2583953408
+19	19	59128983	2662072320
+20	20	63025520	2721316864
+21	21	48129895	2784493568
+22	22	51304566	2832728064
+23	X	155270560	2884108288
+24	Y	59373566	3039559680
+25	MT	16569	3099066368
+26	GL000207.1	4262	3099328512
+27	GL000226.1	15008	3099590656
+28	GL000229.1	19913	3099852800
+29	GL000231.1	27386	3100114944
+30	GL000210.1	27682	3100377088
+31	GL000239.1	33824	3100639232
+32	GL000235.1	34474	3100901376
+33	GL000201.1	36148	3101163520
+34	GL000247.1	36422	3101425664
+35	GL000245.1	36651	3101687808
+36	GL000197.1	37175	3101949952
+37	GL000203.1	37498	3102212096
+38	GL000246.1	38154	3102474240
+39	GL000249.1	38502	3102736384
+40	GL000196.1	38914	3102998528
+41	GL000248.1	39786	3103260672
+42	GL000244.1	39929	3103522816
+43	GL000238.1	39939	3103784960
+44	GL000202.1	40103	3104047104
+45	GL000234.1	40531	3104309248
+46	GL000232.1	40652	3104571392
+47	GL000206.1	41001	3104833536
+48	GL000240.1	41933	3105095680
+49	GL000236.1	41934	3105357824
+50	GL000241.1	42152	3105619968
+51	GL000243.1	43341	3105882112
+52	GL000242.1	43523	3106144256
+53	GL000230.1	43691	3106406400
+54	GL000237.1	45867	3106668544
+55	GL000233.1	45941	3106930688
+56	GL000204.1	81310	3107192832
+57	GL000198.1	90085	3107454976
+58	GL000208.1	92689	3107717120
+59	GL000191.1	106433	3107979264
+60	GL000227.1	128374	3108241408
+61	GL000228.1	129120	3108503552
+62	GL000214.1	137718	3108765696
+63	GL000221.1	155397	3109027840
+64	GL000209.1	159169	3109289984
+65	GL000218.1	161147	3109552128
+66	GL000220.1	161802	3109814272
+67	GL000213.1	164239	3110076416
+68	GL000211.1	166566	3110338560
+69	GL000199.1	169874	3110600704
+70	GL000217.1	172149	3110862848
+71	GL000216.1	172294	3111124992
+72	GL000215.1	172545	3111387136
+73	GL000205.1	174588	3111649280
+74	GL000219.1	179198	3111911424
+75	GL000224.1	179693	3112173568
+76	GL000223.1	180455	3112435712
+77	GL000195.1	182896	3112697856
+78	GL000212.1	186858	3112960000
+79	GL000222.1	186861	3113222144
+80	GL000200.1	187035	3113484288
+81	GL000193.1	189789	3113746432
+82	GL000194.1	191469	3114008576
+83	GL000225.1	211173	3114270720
+84	GL000192.1	547496	3114532864
+--sjdbOverhang = 100 taken from the generated genome
+Started loading the genome: Mon Jun 18 12:49:27 2018
+
+Genome: size given as a parameter = 3186586660
+SA: size given as a parameter = 24219091152
+/SAindex: size given as a parameter = 1
+Read from SAindex: genomeSAindexNbases=14  nSAi=357913940
+nGenome=3186586660;  nSAbyte=24219091152
+GstrandBit=32   SA number of indices=5871294824
+Shared memory is not used for genomes. Allocated a private copy of the genome.
+Genome file size: 3186586660 bytes; state: good=1 eof=0 fail=0 bad=0
+Loading Genome ... done! state: good=1 eof=0 fail=0 bad=0; loaded 3186586660 bytes
+SA file size: 24219091152 bytes; state: good=1 eof=0 fail=0 bad=0
+Loading SA ... done! state: good=1 eof=0 fail=0 bad=0; loaded 24219091152 bytes
+Loading SAindex ... done: 1565873619 bytes
+Finished loading the genome: Mon Jun 18 12:54:14 2018
+
+Processing splice junctions database sjdbN=354564,   sjdbOverhang=100 
+To accomodate alignIntronMax=1000000 redefined winBinNbits=18
+To accomodate alignIntronMax=1000000 and alignMatesGapMax=1000000, redefined winFlankNbins=4 and winAnchorDistNbins=8
+Jun 18 12:54:15   Loaded database junctions from the generated genome /home/users/kjyi/ref/hg19/star_index/sjdbList.out.tab: 354564 total junctions
+
+Jun 18 12:54:15 ..... processing annotations GTF
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+1	1570603	1570918
+1	1570919	1570922
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+1	1570919	1570922
+1	1570923	1571218
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+1	1592939	1594199
+1	1594200	1594840
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+1	1592940	1594199
+1	1594200	1594840
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+1	7442548	7442597
+1	7442598	7442783
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+1	10446161	10446921
+1	10446922	10447207
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+1	12568947	12570579
+1	12570580	12572099
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+1	12568947	12570579
+1	12570580	12572099
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+1	12568947	12570579
+1	12570580	12572099
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+1	12568947	12570579
+1	12570580	12572099
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+1	12822305	12822498
+1	12822499	12823036
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+1	27730730	27732103
+1	27732104	27734840
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+1	144610815	144610985
+1	144610986	144612647
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+1	145115735	145116148
+1	145116149	145116310
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+1	145138424	145139089
+1	145139090	145139613
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+1	145139025	145139089
+1	145139090	145139569
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+1	145290781	145291615
+1	145291616	145291654
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+1	145281955	145284171
+1	145284172	145285912
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+1	145382056	145382201
+1	145382202	145382434
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+1	145382056	145382201
+1	145382202	145382397
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+1	145382056	145382201
+1	145382202	145382378
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+1	145382056	145382201
+1	145382202	145382362
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+1	145472122	145472451
+1	145472452	145472569
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+1	145500513	145500921
+1	145500922	145501670
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+1	145509166	145511796
+1	145511797	145513536
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+1	145514174	145514214
+1	145514215	145514276
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+1	145688683	145695506
+1	145695507	145696218
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+1	147228332	147229643
+1	147229644	147231379
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+1	147228333	147229643
+1	147229644	147231379
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+1	147229426	147229643
+1	147229644	147229879
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+1	149910685	149911936
+1	149911937	149916964
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+1	150192510	150192565
+1	150192566	150193063
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+1	150192510	150192565
+1	150192566	150193063
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+1	150192510	150192565
+1	150192566	150193063
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+1	155160639	155161248
+1	155161249	155161488
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+1	155161249	155161488
+1	155161489	155161620
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+1	155161489	155161620
+1	155161621	155162074
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+1	174968300	174968530
+1	174968531	174968825
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+1	181767428	181776078
+1	181776079	181777219
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+2	24387068	24387178
+2	24387179	24387204
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+2	24387068	24387178
+2	24387179	24387204
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+2	24387068	24387178
+2	24387179	24387204
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+2	24387068	24387178
+2	24387179	24387204
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+2	24387068	24387178
+2	24387179	24387204
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+2	24387126	24387178
+2	24387179	24387204
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+2	24387068	24387178
+2	24387179	24387204
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+2	27535274	27535311
+2	27535312	27535320
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+2	27535082	27535311
+2	27535312	27535456
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+2	27533941	27535311
+2	27535312	27536254
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+2	27534798	27535311
+2	27535312	27535456
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+2	27535082	27535311
+2	27535312	27535456
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+2	27535116	27535311
+2	27535312	27535456
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+2	27535168	27535311
+2	27535312	27535456
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+2	31805690	31805880
+2	31805881	31806136
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+2	38302923	38303017
+2	38303018	38303323
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+2	38302919	38303017
+2	38303018	38303218
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+2	38302923	38303017
+2	38303018	38303296
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+2	38302791	38303017
+2	38303018	38303210
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+2	38302810	38303017
+2	38303018	38303210
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+2	38302843	38303017
+2	38303018	38303210
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+2	38302843	38303017
+2	38303018	38303210
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+2	38302843	38303017
+2	38303018	38303210
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+2	38302843	38303017
+2	38303018	38303210
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+2	39102929	39103032
+2	39103033	39103049
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+2	39102929	39103032
+2	39103033	39103066
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+2	39102929	39103032
+2	39103033	39103075
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+2	55844280	55844616
+2	55844617	55844749
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+2	55844280	55844616
+2	55844617	55844743
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+2	55844280	55844616
+2	55844617	55844723
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+2	55844280	55844616
+2	55844617	55845113
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+2	73675090	73675227
+2	73675228	73681194
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+2	73675090	73675227
+2	73675228	73681194
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+2	73675090	73675227
+2	73675228	73681194
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+2	88751415	88751751
+2	88751752	88752174
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+2	89100616	89103058
+2	89103059	89104394
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+2	96778623	96780988
+2	96780989	96781984
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+2	103512092	103512153
+2	103512154	103512180
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+2	172821355	172821358
+2	172821359	172822038
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+2	232225466	232225535
+2	232225536	232225594
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+2	232225466	232225535
+2	232225536	232225594
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+3	14561618	14561627
+3	14561628	14561786
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+3	14561618	14561627
+3	14561628	14561786
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+3	14561618	14561627
+3	14561628	14561786
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+3	50306593	50306752
+3	50306753	50306780
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+3	50306593	50306752
+3	50306753	50306780
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+3	50306306	50306752
+3	50306753	50306780
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+3	50306438	50306752
+3	50306753	50306780
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+3	50306597	50306752
+3	50306753	50306780
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+3	50306601	50306752
+3	50306753	50306780
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+3	50306646	50306752
+3	50306753	50306780
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+3	53317448	53318546
+3	53318547	53321678
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+3	124646379	124646705
+3	124646706	124646837
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+3	133969267	133969437
+3	133969438	133969487
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+3	133969438	133969487
+3	133969488	133969586
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+3	133969267	133969437
+3	133969438	133969487
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+3	133969438	133969487
+3	133969488	133969586
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+4	48991	49445
+4	49446	49850
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+4	85622	85997
+4	85998	86017
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+4	85998	86017
+4	86018	86032
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+4	86045	86101
+4	86102	87276
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+4	87278	87313
+4	87314	87604
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+4	87314	87604
+4	87605	88099
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+4	85622	85997
+4	85998	86017
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+4	85998	86017
+4	86018	86032
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+4	86045	86101
+4	86102	87276
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+4	87278	87313
+4	87314	87412
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+4	85622	85997
+4	85998	86017
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+4	85998	86017
+4	86018	86032
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+4	86045	86101
+4	86102	87276
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+4	87278	87313
+4	87314	87410
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+4	124420	124905
+4	124906	124930
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+4	9471182	9471212
+4	9471213	9471221
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+5	35055802	35058665
+5	35058666	35058727
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+5	35058666	35058727
+5	35058728	35058804
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+5	35058728	35058804
+5	35058805	35066204
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+5	35055802	35058665
+5	35058666	35058727
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+5	35058666	35058727
+5	35058728	35058804
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+5	35058728	35058804
+5	35058805	35066204
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+5	58460774	58460844
+5	58460845	58460876
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+5	72742083	72743299
+5	72743300	72744352
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+5	77745757	77745853
+5	77745854	77745857
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+5	77745757	77745853
+5	77745854	77745857
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+5	77745757	77745853
+5	77745854	77745857
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+5	102512568	102512570
+5	102512571	102512611
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+5	102512568	102512570
+5	102512571	102512611
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+5	102512568	102512570
+5	102512571	102512611
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+5	131695773	131695801
+5	131695802	131695808
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+5	131695773	131695801
+5	131695802	131695828
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+5	135513026	135513085
+5	135513086	135518420
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+5	135513026	135513085
+5	135513086	135518422
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+5	140474163	140474190
+5	140474191	140478287
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+5	140560980	140561176
+5	140561177	140563573
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+5	140566701	140568034
+5	140568035	140571114
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+5	140567853	140568034
+5	140568035	140568320
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+5	156721792	156721863
+5	156721864	156721868
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+5	156721792	156721863
+5	156721864	156721868
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+5	156721792	156721863
+5	156721864	156721868
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+5	156721792	156721863
+5	156721864	156721868
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+5	156721792	156721863
+5	156721864	156721868
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+5	156721792	156721863
+5	156721864	156721868
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+5	156721792	156721863
+5	156721864	156721868
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+5	156721792	156721863
+5	156721864	156721868
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+5	156721792	156721863
+5	156721864	156721868
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+5	175810941	175811094
+5	175811095	175811099
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+5	175810949	175811094
+5	175811095	175811284
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+5	175810949	175811094
+5	175811095	175811375
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+5	175810961	175811094
+5	175811095	175811287
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+5	175810984	175811094
+5	175811095	175811287
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+6	958563	958803
+6	958804	958828
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+6	28239632	28239932
+6	28239933	28240116
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+6	28239632	28239932
+6	28239933	28240113
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+6	28239632	28239932
+6	28239933	28240113
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+6	28239632	28239932
+6	28239933	28240116
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+6	43501091	43501580
+6	43501581	43501744
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+6	49325859	49325994
+6	49325995	49326569
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+6	70916851	70917559
+6	70917560	70919679
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+6	114178541	114178831
+6	114178832	114179023
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+6	114182784	114183162
+6	114183163	114183593
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	2515304	2515382
+7	2515383	2515462
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	2515065	2515382
+7	2515383	2515462
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	17832466	17835124
+7	17835125	17836562
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	20821903	20822304
+7	20822305	20824947
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	28997499	28997596
+7	28997597	28997908
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	36552557	36552729
+7	36552730	36552790
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	36552730	36552790
+7	36552791	36552986
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	36552607	36552729
+7	36552730	36552790
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	36552730	36552790
+7	36552791	36552986
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	36552610	36552729
+7	36552730	36552790
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	36552730	36552790
+7	36552791	36552986
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	36552610	36552729
+7	36552730	36552790
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	36552730	36552790
+7	36552791	36552986
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	36552611	36552729
+7	36552730	36552790
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	36552730	36552790
+7	36552791	36552986
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	65112457	65112524
+7	65112525	65112954
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	65150572	65150713
+7	65150714	65150776
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	65150572	65150713
+7	65150714	65150776
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	72663923	72664015
+7	72664016	72664105
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	72663923	72664015
+7	72664016	72664105
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	72663923	72664015
+7	72664016	72664105
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	74016692	74016918
+7	74016919	74016930
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	74016692	74016918
+7	74016919	74016927
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	74617274	74617342
+7	74617343	74617435
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	75914933	75914934
+7	75914935	75916603
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	75914933	75914934
+7	75914935	75916605
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	100472733	100472932
+7	100472933	100472949
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	100472748	100472932
+7	100472933	100472949
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	100472748	100472932
+7	100472933	100472949
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	100472785	100472932
+7	100472933	100472949
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	100472807	100472932
+7	100472933	100472949
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	100472810	100472932
+7	100472933	100472949
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	100494174	100494222
+7	100494223	100494594
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	101200651	101200669
+7	101200670	101202304
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	101200651	101200669
+7	101200670	101202304
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	101200651	101200669
+7	101200670	101200913
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	128533445	128533514
+7	128533515	128533529
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	128533445	128533514
+7	128533515	128533529
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	128533445	128533514
+7	128533515	128533529
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	128533445	128533514
+7	128533515	128533529
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	128533445	128533514
+7	128533515	128533529
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	128533445	128533514
+7	128533515	128533529
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	130416063	130417497
+7	130417498	130418688
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	141989465	141989554
+7	141989555	141989609
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	142561724	142562051
+7	142562052	142562504
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	142561724	142562051
+7	142562052	142562504
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	142561724	142562051
+7	142562052	142562504
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	142561724	142562051
+7	142562052	142562504
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	142561724	142562051
+7	142562052	142562504
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	142576023	142576435
+7	142576436	142583134
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	148920904	148921866
+7	148921867	148923339
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	149426279	149426305
+7	149426306	149426460
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	149426279	149426305
+7	149426306	149426460
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	149476623	149476666
+7	149476667	149476774
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	149476623	149476666
+7	149476667	149476774
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	150713776	150713902
+7	150713903	150713908
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	150713776	150713902
+7	150713903	150713908
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	150713776	150713902
+7	150713903	150713908
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	150713776	150713902
+7	150713903	150713908
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	150713776	150713902
+7	150713903	150713908
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	150892662	150892684
+7	150892685	150892744
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	150892662	150892684
+7	150892685	150892744
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+7	158488833	158489052
+7	158489053	158489342
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	1248649	1249714
+8	1249715	1250630
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	1249715	1250630
+8	1250631	1250766
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	8175258	8176387
+8	8176388	8176818
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	8233763	8234870
+8	8234871	8235588
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	8175259	8176387
+8	8176388	8176818
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	8233763	8234870
+8	8234871	8235588
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	30620790	30620840
+8	30620841	30620863
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	30620790	30620840
+8	30620841	30620863
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	30620790	30620840
+8	30620841	30620863
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	30620790	30620840
+8	30620841	30620863
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	30620790	30620840
+8	30620841	30620863
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	30620790	30620840
+8	30620841	30620863
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	30620663	30620840
+8	30620841	30620863
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	48805700	48805816
+8	48805817	48805947
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	48805700	48805816
+8	48805817	48805947
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	64098706	64098729
+8	64098730	64100303
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	64098706	64098729
+8	64098730	64100303
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	64098706	64098729
+8	64098730	64100303
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	64098706	64098729
+8	64098730	64100303
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	64098706	64098729
+8	64098730	64100303
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	64098706	64098729
+8	64098730	64100303
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	64098706	64098729
+8	64098730	64099057
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	64098706	64098729
+8	64098730	64098819
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	64098706	64098729
+8	64098730	64099029
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	64098706	64098729
+8	64098730	64100303
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	64098706	64098729
+8	64098730	64098918
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	64098706	64098729
+8	64098730	64100303
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	86124392	86126830
+8	86126831	86128536
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	86126311	86126830
+8	86126831	86126860
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	86126312	86126830
+8	86126831	86126860
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	86126722	86126830
+8	86126831	86126860
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	86126737	86126830
+8	86126831	86126860
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	86126737	86126830
+8	86126831	86126860
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	86126737	86126830
+8	86126831	86126860
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	86126738	86126830
+8	86126831	86126860
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	86126791	86126830
+8	86126831	86126860
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	87526656	87526691
+8	87526692	87526769
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	87526666	87526691
+8	87526692	87526769
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	87526667	87526691
+8	87526692	87526769
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	87526672	87526691
+8	87526692	87526769
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	87526675	87526691
+8	87526692	87526769
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	87526688	87526691
+8	87526692	87526801
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	143738874	143739805
+8	143739806	143741374
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	143738874	143739805
+8	143739806	143741374
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	143739778	143739805
+8	143739806	143740356
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	143857324	143857441
+8	143857442	143857537
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	143857324	143857441
+8	143857442	143857537
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	143857324	143857441
+8	143857442	143857537
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	143857324	143857441
+8	143857442	143857537
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	143857324	143857441
+8	143857442	143857537
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	143857324	143857441
+8	143857442	143857537
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	144297134	144298159
+8	144298160	144299044
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	144940082	144940300
+8	144940301	144940437
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	144940301	144940437
+8	144940438	144947466
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	144940082	144940300
+8	144940301	144940437
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	144940301	144940437
+8	144940438	144947434
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+8	145554228	145556063
+8	145556064	145557778
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+9	42338767	42338804
+9	42338805	42338937
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+9	42359212	42359231
+9	42359232	42359290
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+9	42470357	42472055
+9	42472056	42474239
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+9	42506229	42506791
+9	42506792	42506814
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+9	44821627	44821655
+9	44821656	44821689
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+9	44821656	44821689
+9	44821690	44821755
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+9	46390110	46390233
+9	46390234	46390265
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+9	70941179	70942321
+9	70942322	70943606
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+9	139235327	139235824
+9	139235825	139236288
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+10	61122159	61122268
+10	61122269	61122308
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+10	61122159	61122268
+10	61122269	61122352
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+10	61122159	61122268
+10	61122269	61122305
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+10	61122159	61122268
+10	61122269	61122322
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+10	61122159	61122268
+10	61122269	61122348
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+10	61122159	61122268
+10	61122269	61122352
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+10	61122159	61122268
+10	61122269	61122280
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+10	97915954	97920099
+10	97920100	97922498
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+10	97915954	97920099
+10	97920100	97923508
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+10	97915954	97920099
+10	97920100	97923508
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+10	97915954	97920099
+10	97920100	97923517
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+10	116930795	116931101
+10	116931102	116931125
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+10	116930795	116931101
+10	116931102	116931132
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+10	118383457	118383463
+10	118383464	118383610
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+10	118383457	118383463
+10	118383464	118383624
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+10	118383457	118383463
+10	118383464	118383610
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+10	118383457	118383463
+10	118383464	118383610
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+10	118383457	118383463
+10	118383464	118383610
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	159455	159865
+11	159866	159980
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	14101446	14101493
+11	14101494	14101567
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	67765146	67765163
+11	67765164	67765269
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	67765146	67765163
+11	67765164	67765269
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	67765029	67765163
+11	67765164	67765269
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	67785997	67786064
+11	67786065	67786106
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	67788954	67789293
+11	67789294	67789339
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	67795217	67795378
+11	67795379	67796163
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	67785997	67786064
+11	67786065	67786106
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	67782767	67786064
+11	67786065	67786106
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	67788954	67789293
+11	67789294	67789339
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	67795217	67795378
+11	67795379	67796749
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	67785997	67786064
+11	67786065	67786106
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	67788954	67789293
+11	67789294	67789339
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	67795217	67795378
+11	67795379	67795624
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	67785997	67786064
+11	67786065	67786106
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	67788954	67789293
+11	67789294	67789339
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	67795217	67795378
+11	67795379	67796743
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	67788954	67789293
+11	67789294	67789339
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	67795217	67795378
+11	67795379	67796161
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	67785997	67786064
+11	67786065	67786106
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	67785997	67786064
+11	67786065	67786106
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	67789223	67789293
+11	67789294	67789339
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	67795217	67795378
+11	67795379	67795577
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	67786051	67786064
+11	67786065	67786106
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	67788954	67789293
+11	67789294	67789320
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	71850007	71850156
+11	71850157	71850193
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	71849879	71850156
+11	71850157	71850193
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	71850007	71850156
+11	71850157	71850193
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	71850007	71850156
+11	71850157	71850193
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	94699460	94699507
+11	94699508	94699577
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	94699460	94699507
+11	94699508	94699577
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	94699460	94699507
+11	94699508	94699577
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	94800361	94800902
+11	94800903	94804387
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	111853064	111853106
+11	111853107	111853211
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	111853064	111853106
+11	111853107	111853211
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	111853064	111853106
+11	111853107	111853211
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	111852942	111853106
+11	111853107	111853211
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	112831969	112832308
+11	112832309	112832340
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	112831969	112832308
+11	112832309	112832340
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	112831969	112832308
+11	112832309	112832340
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	112831969	112832308
+11	112832309	112832340
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	112831997	112832308
+11	112832309	112832340
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	112832090	112832308
+11	112832309	112832340
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	112832090	112832308
+11	112832309	112832340
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	112832124	112832308
+11	112832309	112832340
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	112832124	112832308
+11	112832309	112832340
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	112832147	112832308
+11	112832309	112832340
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	112832157	112832308
+11	112832309	112832340
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	112832158	112832308
+11	112832309	112832340
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	112832159	112832308
+11	112832309	112832340
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	112832161	112832308
+11	112832309	112832340
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	112832202	112832308
+11	112832309	112832340
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	118494801	118495216
+11	118495217	118495227
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	118529018	118529044
+11	118529045	118529077
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	118529018	118529044
+11	118529045	118529077
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	118529018	118529044
+11	118529045	118529077
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	118620718	118621889
+11	118621890	118622806
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	118620718	118621889
+11	118621890	118622806
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	118620718	118621889
+11	118621890	118622614
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	118926991	118927013
+11	118927014	118927129
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	118926991	118927013
+11	118927014	118927116
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	118926991	118927013
+11	118927014	118927129
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	118939907	118939939
+11	118939940	118940054
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	118939884	118939939
+11	118939940	118940054
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	118939909	118939939
+11	118939940	118940054
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	119031591	119031841
+11	119031842	119033362
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	119031591	119031841
+11	119031842	119032145
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	119031591	119031841
+11	119031842	119032357
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	124120407	124121286
+11	124121287	124122018
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	125452242	125452300
+11	125452301	125452315
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	125452242	125452300
+11	125452301	125452315
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	125452242	125452300
+11	125452301	125452315
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	125452242	125452300
+11	125452301	125452315
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	125452242	125452300
+11	125452301	125452315
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	125452242	125452300
+11	125452301	125452315
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+11	125452242	125452300
+11	125452301	125452315
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+12	6937575	6938023
+12	6938024	6938102
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+12	7090456	7090659
+12	7090660	7090793
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+12	86349445	86372640
+12	86372641	86374208
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+12	86372516	86372640
+12	86372641	86374208
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+12	86372524	86372640
+12	86372641	86374208
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+12	86372524	86372640
+12	86372641	86374208
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+12	108925141	108925300
+12	108925301	108925744
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+13	20659962	20664042
+13	20664043	20665968
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+13	20659962	20664042
+13	20664043	20665968
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+13	86929483	86929508
+13	86929509	86929524
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	19500239	19500274
+14	19500275	19500332
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	19563122	19563209
+14	19563210	19563254
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	19880209	19880408
+14	19880409	19880919
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	19882159	19882463
+14	19882464	19884029
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	19889804	19889902
+14	19889903	19890067
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	19891059	19891075
+14	19891076	19891695
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	19969314	19969408
+14	19969409	19969433
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	19969409	19969433
+14	19969434	19969977
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	20105463	20105495
+14	20105496	20105503
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	21964704	21965671
+14	21965672	21965677
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	21965672	21965677
+14	21965678	21967319
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	21964704	21965671
+14	21965672	21965677
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	21965672	21965677
+14	21965678	21967315
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	21963388	21964191
+14	21964192	21964385
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	21989232	21989475
+14	21989476	21989706
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	21989476	21989706
+14	21989707	21993788
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	21989234	21989475
+14	21989476	21989706
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	21989476	21989706
+14	21989707	21990378
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	21989673	21989706
+14	21989707	21990378
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	22136154	22136698
+14	22136699	22138553
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	22141306	22141815
+14	22141816	22142033
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	23020550	23020688
+14	23020689	23020821
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	24646350	24646406
+14	24646407	24646428
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	24646350	24646406
+14	24646407	24646428
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	24646350	24646406
+14	24646407	24646428
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	24646350	24646406
+14	24646407	24646428
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	24646350	24646406
+14	24646407	24646428
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	63784361	63784407
+14	63784408	63784564
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	63784361	63784407
+14	63784408	63784563
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	73957669	73957981
+14	73957982	73960096
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	74100365	74100524
+14	74100525	74100644
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	94582127	94582131
+14	94582132	94582191
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	94582127	94582131
+14	94582132	94582279
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	94582127	94582131
+14	94582132	94582279
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	94582127	94582131
+14	94582132	94582176
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	94582127	94582131
+14	94582132	94582279
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	94582127	94582131
+14	94582132	94582279
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	94582127	94582131
+14	94582132	94582279
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	94582127	94582131
+14	94582132	94582279
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	94582127	94582131
+14	94582132	94582279
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	94582127	94582131
+14	94582132	94582279
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	94581857	94582131
+14	94582132	94582279
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	106627439	106627699
+14	106627700	106627741
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	106636283	106636324
+14	106636325	106636348
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	106636325	106636348
+14	106636349	106636364
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	106636349	106636364
+14	106636365	106636370
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	106636365	106636370
+14	106636371	106636375
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	106636371	106636375
+14	106636376	106636385
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	106636376	106636385
+14	106636386	106636397
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	106636386	106636397
+14	106636398	106636434
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	106636398	106636434
+14	106636435	106636453
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	106636435	106636453
+14	106636454	106636487
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	106636454	106636487
+14	106636488	106636662
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	106636488	106636662
+14	106636663	106636709
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	106636663	106636709
+14	106636710	106636724
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	106636710	106636724
+14	106636725	106636731
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	106636725	106636731
+14	106636732	106636736
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	106636732	106636736
+14	106636737	106636742
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	106636737	106636742
+14	106636743	106636751
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	106636743	106636751
+14	106636752	106636766
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	106636752	106636766
+14	106636767	106636820
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	106744810	106744834
+14	106744835	106745422
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	106744810	106744834
+14	106744835	106744966
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	106899044	106899121
+14	106899122	106899345
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	106928715	106928857
+14	106928858	106928923
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	106937431	106937467
+14	106937468	106937712
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	106960402	106960440
+14	106960441	106960747
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	107057488	107057605
+14	107057606	107057656
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	107275873	107276110
+14	107276111	107276167
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	107280994	107281145
+14	107281146	107281216
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	107281146	107281216
+14	107281217	107281251
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+14	107281217	107281251
+14	107281252	107281265
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+15	22082361	22082663
+15	22082664	22083194
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+15	22082361	22082663
+15	22082664	22082818
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+15	22082361	22082663
+15	22082664	22083141
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+15	22742655	22743074
+15	22743075	22743166
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+15	22743179	22743199
+15	22743200	22743283
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+15	22744255	22745802
+15	22745803	22746002
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+15	22742655	22743074
+15	22743075	22743166
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+15	22743075	22743166
+15	22743167	22743178
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+15	22743167	22743178
+15	22743179	22743199
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+15	22743179	22743199
+15	22743200	22743406
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+15	22743200	22743406
+15	22743407	22743598
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+15	22744255	22745802
+15	22745803	22745998
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+15	40699837	40700006
+15	40700007	40700011
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+15	65243544	65243569
+15	65243570	65243582
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+15	65243586	65243590
+15	65243591	65243641
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+15	65243591	65243641
+15	65243642	65243670
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+15	83192743	83192942
+15	83192943	83193062
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+15	83192943	83193062
+15	83193063	83193313
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+15	83193063	83193313
+15	83193314	83193331
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+15	83193314	83193331
+15	83193332	83193409
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+15	99645241	99646107
+15	99646108	99646214
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+15	99645286	99646107
+15	99646108	99646214
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+15	99645286	99646107
+15	99646108	99646214
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+15	102029579	102029685
+15	102029686	102030042
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+15	102029579	102029685
+15	102029686	102029947
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+15	102029579	102029685
+15	102029686	102029947
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+15	102029579	102029685
+15	102029686	102029947
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+15	102029579	102029685
+15	102029686	102029900
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+15	102029579	102029685
+15	102029686	102029900
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+15	102029579	102029685
+15	102029686	102030187
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+16	138697	138772
+16	138773	141084
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+16	138697	138772
+16	138773	138888
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+16	138697	138772
+16	138773	138888
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+16	138697	138772
+16	138773	138888
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+16	138697	138772
+16	138773	138888
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+16	138697	138772
+16	138773	138888
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+16	11493329	11493346
+16	11493347	11493456
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+16	11493329	11493346
+16	11493347	11493456
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+16	47005261	47006160
+16	47006161	47006854
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+16	71981395	71981414
+16	71981415	71981490
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+16	76311176	76311602
+16	76311603	76311644
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+16	76311176	76311602
+16	76311603	76311644
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+16	76311176	76311602
+16	76311603	76311644
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+16	76311561	76311602
+16	76311603	76311644
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	6555038	6555546
+17	6555547	6556792
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	6555191	6555546
+17	6555547	6555913
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	6555484	6555546
+17	6555547	6555913
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	8725164	8725214
+17	8725215	8725253
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	8725164	8725214
+17	8725215	8725253
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	8725164	8725214
+17	8725215	8725253
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	8725164	8725214
+17	8725215	8725253
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	18498035	18498059
+17	18498060	18498175
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	18498035	18498059
+17	18498060	18498175
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	18498035	18498059
+17	18498060	18498175
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	18498035	18498059
+17	18498060	18498175
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	21156472	21156530
+17	21156531	21156722
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	26684395	26684529
+17	26684530	26684545
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	26687758	26687898
+17	26687899	26688130
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	26692143	26692224
+17	26692225	26692265
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	26699207	26699367
+17	26699368	26699521
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	26723176	26724874
+17	26724875	26727721
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	26723176	26724874
+17	26724875	26725179
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	26721775	26724874
+17	26724875	26726729
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	26722695	26724874
+17	26724875	26726729
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	34100185	34100350
+17	34100351	34100408
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	34100185	34100350
+17	34100351	34100408
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	34100185	34100350
+17	34100351	34100408
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	34859790	34860752
+17	34860753	34861016
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	34860742	34860752
+17	34860753	34861243
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	35294210	35294340
+17	35294341	35294542
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	35970177	35970339
+17	35970340	35974398
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	36338141	36338150
+17	36338151	36338594
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	38333748	38334359
+17	38334360	38334633
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	38334115	38334359
+17	38334360	38334633
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	40976173	40976311
+17	40976312	40976396
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	43192462	43192549
+17	43192550	43192611
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	43192462	43192549
+17	43192550	43192710
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	43192511	43192549
+17	43192550	43192611
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	43192462	43192549
+17	43192550	43192611
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	43363798	43364293
+17	43364294	43364411
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	43363798	43364293
+17	43364294	43364411
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	43363798	43364293
+17	43364294	43364411
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	46115033	46115074
+17	46115075	46115084
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	46115075	46115084
+17	46115085	46115122
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	46115085	46115122
+17	46115123	46115144
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	46115033	46115074
+17	46115075	46115084
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	46115075	46115084
+17	46115085	46115122
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	46115085	46115122
+17	46115123	46115135
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	48226508	48227384
+17	48227385	48227403
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	48227385	48227403
+17	48227404	48227991
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	72889504	72889677
+17	72889678	72889708
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	72889504	72889677
+17	72889678	72889879
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	73232694	73234010
+17	73234011	73234470
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	73232694	73234010
+17	73234011	73234470
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	73232694	73234010
+17	73234011	73234470
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	73232694	73234010
+17	73234011	73234470
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	73232695	73234010
+17	73234011	73234470
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	73232697	73234010
+17	73234011	73234470
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	73612605	73612642
+17	73612643	73612865
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	73612605	73612642
+17	73612643	73612865
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	73612605	73612642
+17	73612643	73612865
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	73612393	73612642
+17	73612643	73612759
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	77682281	77682786
+17	77682787	77683390
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+17	77683430	77683981
+17	77683982	77686081
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+18	43833663	43833701
+18	43833702	43833786
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+18	43833663	43833701
+18	43833702	43833786
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+18	74401986	74403378
+18	74403379	74403929
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+18	74402046	74403378
+18	74403379	74403499
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	2340075	2340154
+19	2340155	2340170
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	2340075	2340154
+19	2340155	2340170
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	2340075	2340154
+19	2340155	2340170
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	2340075	2340154
+19	2340155	2340170
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	2340075	2340154
+19	2340155	2340170
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	2340075	2340154
+19	2340155	2340170
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	2340075	2340154
+19	2340155	2340170
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	2340075	2340154
+19	2340155	2340170
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	2340075	2340154
+19	2340155	2340170
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	4954662	4954679
+19	4954680	4954833
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	4954662	4954679
+19	4954680	4954833
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	4954662	4954679
+19	4954680	4954833
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	4954662	4954679
+19	4954680	4954833
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	4954662	4954679
+19	4954680	4954833
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	4954662	4954679
+19	4954680	4954833
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	4954662	4954679
+19	4954680	4954833
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	7938305	7938306
+19	7938307	7938581
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	7938305	7938306
+19	7938307	7938482
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	11526623	11526892
+19	11526893	11526908
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	15730446	15730498
+19	15730499	15730572
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	15730301	15730498
+19	15730499	15730572
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	15728811	15730498
+19	15730499	15730572
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	15730446	15730498
+19	15730499	15730572
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	18897342	18897526
+19	18897527	18897844
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	35842455	35844679
+19	35844680	35844764
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	41123006	41123093
+19	41123094	41123130
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	41123006	41123093
+19	41123094	41123130
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	41123006	41123093
+19	41123094	41123130
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	41123006	41123093
+19	41123094	41123130
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	41123006	41123093
+19	41123094	41123130
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	41123006	41123093
+19	41123094	41123130
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	41123006	41123093
+19	41123094	41123130
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	41123006	41123093
+19	41123094	41123130
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	41123006	41123093
+19	41123094	41123130
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	41122795	41123093
+19	41123094	41123102
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	41123006	41123093
+19	41123094	41123130
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	41123006	41123093
+19	41123094	41123130
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	42347645	42347973
+19	42347974	42348736
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	45170227	45170572
+19	45170573	45170589
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	45170227	45170572
+19	45170573	45170589
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	45170227	45170572
+19	45170573	45170589
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	51676233	51676684
+19	51676685	51676780
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	51676233	51676684
+19	51676685	51676756
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	51675323	51676684
+19	51676685	51676778
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	51676233	51676684
+19	51676685	51676685
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	54663846	54663896
+19	54663897	54664111
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	54663846	54663896
+19	54663897	54664111
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	54663846	54663896
+19	54663897	54664111
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	54663846	54663896
+19	54663897	54664111
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	54676734	54676814
+19	54676815	54676865
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	54676734	54676814
+19	54676815	54676944
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	54676734	54676814
+19	54676815	54676854
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	54869615	54870006
+19	54870007	54870232
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	55056656	55057022
+19	55057023	55057053
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	55049184	55049597
+19	55049598	55049868
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	55098668	55100683
+19	55100684	55101752
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	56052023	56052337
+19	56052338	56052892
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	58718087	58718360
+19	58718361	58718568
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	58718087	58718360
+19	58718361	58718568
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	58718087	58718360
+19	58718361	58718568
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	58718087	58718360
+19	58718361	58718568
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	58718087	58718360
+19	58718361	58718568
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	58718087	58718360
+19	58718361	58718568
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	58718087	58718360
+19	58718361	58718568
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	58718087	58718360
+19	58718361	58718568
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+19	58718087	58718360
+19	58718361	58718455
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+20	21186130	21186161
+20	21186162	21186222
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+20	21186130	21186161
+20	21186162	21186222
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+20	21186130	21186161
+20	21186162	21186222
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+20	21186130	21186161
+20	21186162	21186222
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+20	21186130	21186161
+20	21186162	21186222
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+20	21186130	21186161
+20	21186162	21186222
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+20	21186130	21186161
+20	21186162	21186222
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+20	21186130	21186161
+20	21186162	21186168
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+20	21174683	21176014
+20	21176015	21179443
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+20	34130571	34131762
+20	34131763	34132550
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+20	34147111	34147281
+20	34147282	34147394
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+20	34147111	34147281
+20	34147282	34147394
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+20	34152290	34152587
+20	34152588	34152834
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+20	34147111	34147281
+20	34147282	34148405
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+20	34152290	34152587
+20	34152588	34152834
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+20	34147111	34147281
+20	34147282	34147394
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+20	34152290	34152587
+20	34152588	34152834
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+20	34146926	34147281
+20	34147282	34147394
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+20	34147111	34147281
+20	34147282	34147394
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+20	60511795	60512339
+20	60512340	60515673
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+20	62329995	62331335
+20	62331336	62331882
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+20	62329996	62331335
+20	62331336	62331882
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+20	62329996	62331335
+20	62331336	62332054
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+20	62329996	62331335
+20	62331336	62331882
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+20	62330809	62331335
+20	62331336	62331882
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+20	62330809	62331335
+20	62331336	62331882
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+20	62330809	62331335
+20	62331336	62331882
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+20	62330831	62331335
+20	62331336	62332054
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+20	62330850	62331335
+20	62331336	62331882
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+20	62330865	62331335
+20	62331336	62332054
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+21	14415535	14416337
+21	14416338	14416438
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+21	15048216	15048731
+21	15048732	15049653
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+21	17979314	17981988
+21	17981989	17982094
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+21	34224059	34224412
+21	34224413	34224779
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+21	35339584	35339763
+21	35339764	35339819
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+21	35339326	35339763
+21	35339764	35339819
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+21	35819064	35819995
+21	35819996	35821982
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+21	35819064	35819995
+21	35819996	35821982
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+21	44514765	44514969
+21	44514970	44516053
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+21	44514765	44514969
+21	44514970	44516500
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+21	44517756	44520034
+21	44520035	44521542
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+21	44589711	44589920
+21	44589921	44589963
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+22	18032535	18035852
+22	18035853	18036387
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+22	20779948	20779973
+22	20779974	20780025
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+22	20779948	20779973
+22	20779974	20780025
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+22	22393836	22394291
+22	22394292	22394463
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+22	22618984	22626577
+22	22626578	22627402
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+22	22640241	22640282
+22	22640283	22640354
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+22	22838767	22840125
+22	22840126	22841789
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+22	22840126	22841789
+22	22841790	22841833
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+22	22841790	22841833
+22	22841834	22841840
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+22	22839204	22840125
+22	22840126	22840320
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+22	22841203	22841789
+22	22841790	22841833
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+22	22841790	22841833
+22	22841834	22841840
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+22	22839219	22840125
+22	22840126	22840320
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+22	22841203	22841789
+22	22841790	22841833
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+22	22841790	22841833
+22	22841834	22841840
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+22	23165153	23165242
+22	23165243	23165360
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+22	27061421	27062698
+22	27062699	27062900
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+22	27061495	27062698
+22	27062699	27062900
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+22	27061495	27062698
+22	27062699	27062900
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+22	27061421	27062698
+22	27062699	27062900
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+22	29707452	29707639
+22	29707640	29708774
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+22	29706817	29707639
+22	29707640	29708083
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+22	29707452	29707639
+22	29707640	29708774
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+22	29707452	29707639
+22	29707640	29708774
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+22	29707452	29707639
+22	29707640	29708774
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+22	30818266	30819615
+22	30819616	30821305
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+22	30818266	30819615
+22	30819616	30819826
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+22	30818266	30819615
+22	30819616	30819828
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+22	30818266	30819615
+22	30819616	30819826
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+22	30822705	30822920
+22	30822921	30823179
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+22	36585172	36587845
+22	36587846	36587958
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+22	36585177	36587845
+22	36587846	36587958
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+22	36585177	36587845
+22	36587846	36587958
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+22	36586845	36587845
+22	36587846	36587958
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+22	36587307	36587845
+22	36587846	36587958
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+22	37243415	37243537
+22	37243538	37244059
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+22	37600278	37602583
+22	37602584	37603878
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+22	37602520	37602583
+22	37602584	37603878
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+22	38694586	38694588
+22	38694589	38694939
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+22	45810203	45810278
+22	45810279	45810283
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+22	45810204	45810278
+22	45810279	45810283
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+22	51042270	51042513
+22	51042514	51043492
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+22	51042270	51042513
+22	51042514	51043492
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	46917569	46918916
+X	46918917	46918950
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	46918917	46918950
+X	46918951	46918957
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	46918951	46918957
+X	46918958	46918974
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	46918958	46918974
+X	46918975	46919651
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	46917569	46918916
+X	46918917	46918950
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	46918917	46918950
+X	46918951	46918957
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	46918951	46918957
+X	46918958	46918974
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	46918958	46918974
+X	46918975	46919651
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	47925699	47925715
+X	47925716	47925971
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	49022413	49024806
+X	49024807	49024820
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	49040112	49040115
+X	49040116	49040370
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	49040049	49040115
+X	49040116	49040370
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	50121097	50121146
+X	50121147	50121230
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	52985471	52987539
+X	52987540	52987681
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	52986286	52987539
+X	52987540	52987611
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	53713533	53713584
+X	53713585	53713629
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	53713533	53713584
+X	53713585	53713629
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	76849166	76851914
+X	76851915	76852344
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	85224092	85224121
+X	85224122	85226590
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	103029314	103029329
+X	103029330	103029383
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	103172033	103172240
+X	103172241	103172808
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	103343898	103348397
+X	103348398	103349971
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	114659426	114659662
+X	114659663	114660070
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	122318371	122318386
+X	122318387	122318496
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	122336488	122336600
+X	122336601	122336633
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	122318096	122318386
+X	122318387	122318496
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	122318152	122318386
+X	122318387	122318496
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	122336488	122336600
+X	122336601	122336633
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	122318224	122318386
+X	122318387	122318496
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	122318336	122318386
+X	122318387	122318496
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	122318336	122318386
+X	122318387	122318496
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	142712353	142714379
+X	142714380	142715896
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	148615540	148615567
+X	148615568	148615906
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	148615540	148615567
+X	148615568	148615960
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	148615540	148615567
+X	148615568	148615906
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	148713226	148713418
+X	148713419	148713568
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	148713226	148713418
+X	148713419	148713568
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	152864420	152864480
+X	152864481	152864513
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	152864481	152864513
+X	152864514	152864609
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	152864514	152864609
+X	152864610	152864641
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	152864424	152864480
+X	152864481	152864488
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	152864424	152864480
+X	152864481	152864513
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	152864481	152864513
+X	152864514	152864573
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	152864420	152864480
+X	152864481	152864513
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	152864481	152864513
+X	152864514	152864573
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	152864424	152864480
+X	152864481	152864513
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	152864481	152864513
+X	152864514	152864573
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	152864420	152864480
+X	152864481	152864511
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	152864420	152864480
+X	152864481	152864513
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	152864481	152864513
+X	152864514	152864572
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	153149319	153149708
+X	153149709	153149960
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	153149403	153149708
+X	153149709	153149727
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	153360425	153362757
+X	153362758	153362980
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	153700933	153702655
+X	153702656	153703118
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	153702656	153703118
+X	153703119	153703438
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	153703119	153703438
+X	153703439	153704796
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+X	153704798	153706040
+X	153706041	153706118
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+GL000220.1	153803	154481
+GL000220.1	154482	154617
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+GL000195.1	45410	45519
+GL000195.1	45520	45717
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+GL000195.1	52090	52278
+GL000195.1	52279	52580
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+GL000195.1	52279	52580
+GL000195.1	52581	52708
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+GL000195.1	45414	45519
+GL000195.1	45520	45591
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+GL000195.1	140970	141239
+GL000195.1	141240	141288
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+GL000195.1	140970	141239
+GL000195.1	141240	141288
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+GL000195.1	140970	141239
+GL000195.1	141240	141288
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+GL000204.1	43956	43976
+GL000204.1	43977	43996
+WARNING: while processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf: overlapping or touching exons:
+GL000204.1	43998	44311
+GL000204.1	44312	47993
+Processing sjdbGTFfile=/home/users/kjyi/ref/gencode.v27lift37.gtf, found:
+		202697 transcripts
+		1206031 exons (non-collapsed)
+		354658 collapsed junctions
+Jun 18 12:54:41 ..... finished GTF processing
+Jun 18 12:54:41   Loaded database junctions from the GTF file: /home/users/kjyi/ref/gencode.v27lift37.gtf: 709222 total junctions
+
+WARNING: long repeat for junction # 256016 : 15 89398753 89398809; left shift = 14; right shift = 255
+WARNING: long repeat for junction # 610635 : 15 89398753 89398809; left shift = 14; right shift = 255
+Jun 18 12:54:42   Finished preparing junctions
+Jun 18 12:54:42 ..... inserting junctions into the genome indices
+Jun 18 12:54:45   Finished SA search: number of new junctions=0, old junctions=354564
+Jun 18 12:54:45   Finished sorting SA indicesL nInd=0
+Jun 18 12:56:02   Finished inserting junction indices
+Jun 18 12:56:05   Finished SAi
+Jun 18 12:56:05 ..... finished inserting junctions into genome
+Opening the file: ./star/NSCLC_01_NTIL._STARtmp//FilterBySJoutFiles.mate1.thread0 ... ok
+Opening the file: ./star/NSCLC_01_NTIL._STARtmp//FilterBySJoutFiles.mate1.thread1 ... ok
+Opening the file: ./star/NSCLC_01_NTIL._STARtmp//FilterBySJoutFiles.mate1.thread2 ... ok
+Opening the file: ./star/NSCLC_01_NTIL._STARtmp//FilterBySJoutFiles.mate1.thread3 ... ok
+Created thread # 1
+Created thread # 2
+Starting to map file # 0
+mate 1:   fastq/mod/fastq.GSM2411332.fastq.gz
+Created thread # 3
+Thread #0 end of input stream, nextChar=-1
+Completed: thread #3
+Completed: thread #0
+Completed: thread #1
+Joined thread # 1
+Completed: thread #2
+Joined thread # 2
+Joined thread # 3
+Jun 18 12:57:13   Loaded database junctions from the 1st pass file: ./star/NSCLC_01_NTIL._STARpass1//SJ.out.tab: 806580 total junctions
+
+WARNING: long repeat for junction # 256016 : 15 89398753 89398809; left shift = 14; right shift = 255
+WARNING: long repeat for junction # 610635 : 15 89398753 89398809; left shift = 14; right shift = 255
+Jun 18 12:57:14   Finished preparing junctions
+Jun 18 12:57:14 ..... inserting junctions into the genome indices
+Jun 18 12:57:18   Finished SA search: number of new junctions=5997, old junctions=354564
+Jun 18 12:57:19   Finished sorting SA indicesL nInd=2398800
+Jun 18 12:58:38   Finished inserting junction indices
+Jun 18 12:58:42   Finished SAi
+Jun 18 12:58:43 ..... finished inserting junctions into genome
+
+   Input read files for mate 1, from input string fastq/mod/fastq.GSM2411332.fastq.gz
+-rw-r--r-- 1 kjyi julab 262505562 Jun 18 12:19 fastq/mod/fastq.GSM2411332.fastq.gz
+
+   readsCommandsFile:
+exec > "./star/NSCLC_01_NTIL._STARtmp/tmp.fifo.read1"
+echo FILE 0
+zcat      "fastq/mod/fastq.GSM2411332.fastq.gz"
+
+Loaded transcript database, nTr=202697
+Loaded exon database, nEx=1206031
+Opening the file: ./star/NSCLC_01_NTIL._STARtmp//Chimeric.out.sam.thread0 ... ok
+Opening the file: ./star/NSCLC_01_NTIL._STARtmp//Chimeric.out.junction.thread0 ... ok
+Opening the file: ./star/NSCLC_01_NTIL._STARtmp//FilterBySJoutFiles.mate1.thread0 ... ok
+Opening the file: ./star/NSCLC_01_NTIL._STARtmp//Chimeric.out.sam.thread1 ... ok
+Opening the file: ./star/NSCLC_01_NTIL._STARtmp//Chimeric.out.junction.thread1 ... ok
+Opening the file: ./star/NSCLC_01_NTIL._STARtmp//FilterBySJoutFiles.mate1.thread1 ... ok
+Opening the file: ./star/NSCLC_01_NTIL._STARtmp//Chimeric.out.sam.thread2 ... ok
+Opening the file: ./star/NSCLC_01_NTIL._STARtmp//Chimeric.out.junction.thread2 ... ok
+Opening the file: ./star/NSCLC_01_NTIL._STARtmp//FilterBySJoutFiles.mate1.thread2 ... ok
+Opening the file: ./star/NSCLC_01_NTIL._STARtmp//Chimeric.out.sam.thread3 ... ok
+Opening the file: ./star/NSCLC_01_NTIL._STARtmp//Chimeric.out.junction.thread3 ... ok
+Opening the file: ./star/NSCLC_01_NTIL._STARtmp//FilterBySJoutFiles.mate1.thread3 ... ok
+Created thread # 1
+Created thread # 2
+Starting to map file # 0
+mate 1:   fastq/mod/fastq.GSM2411332.fastq.gz
+Created thread # 3
+Thread #0 end of input stream, nextChar=-1
+Completed: thread #3
+Completed: thread #0
+Completed: thread #1
+Joined thread # 1
+Completed: thread #2
+Joined thread # 2
+Joined thread # 3
+Completed stage 1 mapping of outFilterBySJout mapping
+Detected 35 novel junctions that passed filtering, will proceed to filter reads that contained unannotated junctions
+Created thread # 1
+Created thread # 2
+Created thread # 3
+Completed: thread #3
+Completed: thread #1
+Completed: thread #0
+Joined thread # 1
+Completed: thread #2
+Joined thread # 2
+Joined thread # 3
+ALL DONE!

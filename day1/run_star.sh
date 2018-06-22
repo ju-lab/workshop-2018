@@ -1,3 +1,4 @@
+
 mkdir -p star/example1
 STAR --runMode alignReads \
 	--outSAMtype BAM Unsorted \
@@ -7,4 +8,4 @@ STAR --runMode alignReads \
 	--runThreadN 20 \
 	--chimOutType WithinBAM \
 	--readFilesCommand zcat \
-	--readFilesIn ./fastq/KA-1-RNA_trimmed_R1.fastq.gz ./fastq/KA-1-RNA_trimmed_R2.fastq.gz
+	--readFilesIn fastq/example_R1.fastq.gz fastq/example_R2.fastq.gz
