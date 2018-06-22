@@ -1,4 +1,3 @@
-
 mkdir -p star/example1
 STAR --runMode alignReads \
 	--outSAMtype BAM Unsorted \
